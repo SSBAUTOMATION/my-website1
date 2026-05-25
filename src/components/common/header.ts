@@ -20,3 +20,20 @@ export function renderHeader(activePath: string, nav: NavItem[], brandName: stri
     links,
   })
 }
+
+export function initializeHeaderMenu(container: HTMLElement): void {
+  const header = container.querySelector<HTMLElement>('.ssb-header')
+  const menu = container.querySelector<HTMLElement>('.ssb-menu')
+  const toggle = container.querySelector<HTMLButtonElement>('.ssb-menu-toggle')
+
+  if (!header || !menu || !toggle) {
+    return
+  }
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true'
+    toggle.setAttribute('aria-expanded', String(!expanded))
+    menu.setAttribute('aria-expanded', String(!expanded))
+    menu.classList.toggle('ssb-menu--open', !expanded)
+  })
+}

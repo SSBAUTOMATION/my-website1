@@ -1,4 +1,10 @@
 <header class="ssb-header">
-  <div class="ssb-logo">{{brandName}}</div>
-  <nav class="ssb-menu" aria-label="Main menu">{{links}}</nav>
+  <div class="ssb-brand-row">
+    <div class="ssb-logo">{{brandName}}</div>
+    <button class="ssb-menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+      <span class="ssb-menu-toggle-icon" aria-hidden="true">☰</span>
+      <span class="visually-hidden">Toggle navigation</span>
+    </button>
+  </div>
+  <nav id="main-menu" class="ssb-menu" aria-label="Main menu" aria-expanded="false">{{links}}</nav>
 </header>

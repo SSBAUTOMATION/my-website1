@@ -29,11 +29,10 @@ export const siteContent = {
     { label: "Services", path: "/services" },
     { label: "Products & Services", path: "/projects" },
     { label: "Our Clients", path: "/clients" },
-    { label: "Careers", path: "/careers" },
     { label: "Contact Us", path: "/contact" },
   ] as NavItem[],
   hero: {
-    heading: "SMART INDUSTRIAL AUTOMATION SOLUTIONS",
+    heading: "SSB AUTOMATION<br/><span class='hero-muted'>VERSATILE SOLUTIONS</span>",
     subheading:
       "Special Purpose Machine Manufacturing | Robot Installation | PLC & HMI Programming | Electrical Panels",
     primaryButton: "Get a Quote",
@@ -83,7 +82,6 @@ export const siteContent = {
     },
     placeholderPages: {
       projectsTitle: "Products & Services",
-      careersTitle: "Careers",
       defaultDescription:
         "This page is ready for your project-specific content and case studies.",
     },
@@ -151,7 +149,7 @@ export const siteContent = {
   ],
   contact: {
     phone: "+91 96555 80968",
-    email: "info@ssbautomation.com",
+    email: "ssbrobotization@gmail.com",
     location:
       "<strong>Office 1:</strong> Kamarajar Nagar, Viralimalai, Pudukottai (DT), Tamil Nadu 621316<br /><strong>Office 2:</strong> Chandapura, Anekal Road, Marasur Gate, Bengaluru 562106, Karnataka",
     quickActions: {

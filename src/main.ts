@@ -1,5 +1,6 @@
 import './style.css'
 import { createCompanyLayout } from './components/companyLayout.ts'
+import { initializeHeaderMenu } from './components/common/header.ts'
 import { initializeProjectsSlider } from './components/pages/projectsPage.ts'
 import { siteContent } from './config/siteContent.ts'
 
@@ -32,6 +33,7 @@ function render(pathname: string) {
   destroyPageInteractions?.()
   root.innerHTML = createCompanyLayout(pathname)
   destroyPageInteractions = initializeProjectsSlider(root)
+  initializeHeaderMenu(root)
 }
 
 globalThis.addEventListener('click', (event) => {

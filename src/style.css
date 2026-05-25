@@ -76,6 +76,85 @@ body {
   background: rgba(11, 45, 91, 0.06);
 }
 
+.ssb-brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.ssb-menu-toggle {
+  display: none;
+  border: 1px solid rgba(11, 45, 91, 0.15);
+  background: rgba(11, 45, 91, 0.08);
+  color: var(--brand-blue);
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.ssb-menu-toggle:hover,
+.ssb-menu-toggle:focus-visible {
+  background: rgba(11, 45, 91, 0.16);
+  border-color: rgba(11, 45, 91, 0.35);
+  color: var(--brand-blue);
+  outline: none;
+}
+
+.ssb-menu-toggle-icon {
+  display: inline-block;
+  line-height: 1;
+  font-size: 1.1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 860px) {
+  .ssb-header {
+    padding: 14px 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .ssb-menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+  }
+
+  .ssb-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 12px;
+    gap: 8px;
+  }
+
+  .ssb-menu.ssb-menu--open {
+    display: flex;
+  }
+
+  .ssb-menu a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 12px;
+  }
+}
+
 .hero-section {
   padding: 72px 22px 54px;
   color: var(--white);
@@ -89,6 +168,21 @@ body {
   font-size: clamp(1.8rem, 4vw, 2.9rem);
   max-width: 950px;
 }
+
+/* second-line hero text: slight right indent and italic style */
+.hero-section h1 .hero-muted {
+  display: block;
+  margin-left: 12px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* re-enable subtle opacity for muted hero text */
+.hero-section h1 .hero-muted {
+  opacity: 0.62;
+  transition: opacity 160ms ease-in-out;
+}
+
 
 .hero-tag {
   display: inline-block;

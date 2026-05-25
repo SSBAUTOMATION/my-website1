@@ -5,7 +5,6 @@ import { renderAboutPage } from './pages/aboutPage.ts'
 import { renderContactPage } from './pages/contactPage.ts'
 import { renderClientsPage } from './pages/clientsPage.ts'
 import { renderHomePage } from './pages/homePage.ts'
-import { renderPlaceholderPage } from './pages/placeholderPage.ts'
 import { renderProjectsPage } from './pages/projectsPage.ts'
 import { renderServicesPage } from './pages/servicesPage.ts'
 import layoutTemplate from '../templates/layout.html?raw'
@@ -32,9 +31,6 @@ function renderCurrentPage(path: string): string {
     return renderClientsPage()
   }
 
-  if (path === '/careers') {
-    return renderPlaceholderPage(siteContent.labels.placeholderPages.careersTitle)
-  }
 
   return renderHomePage()
 }
