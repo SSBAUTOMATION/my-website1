@@ -1,0 +1,17 @@
+<section class="content-section projects-section">
+  {{pageTitle}}
+  <div class="projects-slider" aria-label="Products and services gallery">
+    {{slides}}
+    <div class="projects-controls {{controlsHiddenClass}}" aria-label="Slide controls">
+      <button type="button" class="projects-control" data-slide-control="prev" aria-label="Previous image">
+        <span class="projects-control-icon" aria-hidden="true">&#10094;</span>
+      </button>
+      <button type="button" class="projects-control" data-slide-control="next" aria-label="Next image">
+        <span class="projects-control-icon" aria-hidden="true">&#10095;</span>
+      </button>
+    </div>
+    <div class="projects-dots {{dotsHiddenClass}}" aria-label="Slide indicators">
+      {{dots}}
+    </div>
+  </div>
+</section>
