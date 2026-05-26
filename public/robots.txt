@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ssbautomation.com/sitemap.xml
