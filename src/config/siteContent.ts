@@ -19,9 +19,9 @@ export const siteContent = {
   seo: {
     title: "SSB Automation | Industrial Automation Solutions",
     description:
-      "SSB Automation provides industrial automation solutions including SPM manufacturing, robot installation, PLC & HMI programming, and electrical panel manufacturing. Trusted automation partner since 2022.",
+      "SSB Automation is an industrial automation company providing customized SPM manufacturing, robot installation, PLC & HMI programming, and electrical panel manufacturing. Trusted automation partner since 2022.",
     keywords:
-      "Industrial Automation Company, SPM Manufacturing, PLC Programming, HMI Programming, Robot Installation, Electrical Panel Manufacturing, Industrial Automation Solutions, Customized Automation Systems, Industrial Robotics, Control Panel Manufacturer",
+      "SSB Automation, ssbautomation, Industrial Automation Company, SPM Manufacturing, PLC Programming, HMI Programming, Robot Installation, Electrical Panel Manufacturing, Industrial Automation Solutions, Customized Automation Systems, Industrial Robotics, Control Panel Manufacturer",
   },
   nav: [
     { label: "Home", path: "/home" },
@@ -148,13 +148,13 @@ export const siteContent = {
     "End-to-End Automation Support",
   ],
   contact: {
-    phone: "+91 96555 80968",
+    phone: "+91 79754 20342",
     email: "ssbrobotization@gmail.com",
     location:
       "<strong>Office 1:</strong> Kamarajar Nagar, Viralimalai, Pudukottai (DT), Tamil Nadu 621316<br /><strong>Office 2:</strong> Chandapura, Anekal Road, Marasur Gate, Bengaluru 562106, Karnataka",
     quickActions: {
-      whatsapp: "+91 96555 80968",
-      call: "+91 96555 80968",
+      whatsapp: "+91 79754 20342",
+      call: "+91 79754 20342",
       whatsappMessage:
         "Hi SSB Automation, I need a quote for industrial automation solutions.",
     },
